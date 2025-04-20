@@ -1,0 +1,15 @@
+messages:
+  no_permission:
+    en: "§cYou do not have permission to use this command!"
+    ja: "§cこのコマンドを実行する権限がありません！"
+    zh: "§c你没有权限使用此命令！"
+
+  command_blocked:
+    en: "§cThis command is not allowed!"
+    ja: "§cこのコマンドは許可されていません！"
+    zh: "§c此命令不被允许！"
+
+  config_reloaded:
+    en: "§aCommandLimiter config reloaded!"
+    ja: "§aCommandLimiterの設定をリロードしました！"
+    zh: "§aCommandLimiter 配置已重新加载！"

@@ -1,0 +1,23 @@
+name: CommandLimiter
+version: 1.0
+main: marvtechnology.commandlimit.CommandLimiter
+api-version: "1.20"
+folia-supported: true
+author: marvtechnology
+description: Allows only specific commands to be tab-completed
+
+commands:
+  commandlimit:
+    description: Reload the command limiter configuration
+    usage: /commandlimit reload
+    permission: commandlimit.admin
+    permission-message: "§cこのコマンドを実行する権限がありません！"
+
+permissions:
+  commandlimit.admin:
+    description: Allows reloading the plugin configuration
+    default: op
+
+  commandlimit.bypass:
+    description: Allows the player to use all commands without restrictions
+    default: op
