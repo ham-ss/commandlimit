@@ -21,3 +21,9 @@ It supports Folia, permission-based exceptions, and configuration reloading.
 - 🧩 特定コマンドのみタブ補完可能に制限
 
 ---
+
+> ⚠️ This plugin is provided **as-is**.  
+> No support or bug fixes are guaranteed.
+
+> ⚠️ 本プラグインは「現状のまま」提供されます。  
+> 不具合への対応やサポートは**一切保証されません**。
