@@ -1,7 +1,7 @@
 # commandlimit
 
 🛑 A Folia-compatible plugin to limit or restrict command usage and tab-completion per player or permission group.  
-📦 Developed by marvtechnology.
+📦 Developed by MARVtechnology.
 
 ---
 
