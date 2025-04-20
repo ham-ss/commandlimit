@@ -33,7 +33,7 @@ public class CommandListener implements Listener {
     @EventHandler
     public void onCommandPreProcess(PlayerCommandPreprocessEvent event) {
         Player player = event.getPlayer();
-        // 例: "/pl someArg" → ["/pl", "someArg"] → command = "pl"
+
         String command = event.getMessage().split(" ")[0].substring(1).toLowerCase();
 
         if (player.isOp() || player.hasPermission("commandlimit.bypass")) {
@@ -48,20 +48,11 @@ public class CommandListener implements Listener {
         }
     }
 
-    /**
-     * Foliaの場合、Player#locale() が Optional<Locale> を返す可能性があるので注意。
-     * 以下では Optional を使わない実装例として、Foliaが locale() を直接返すケースを想定し、
-     * もし Optional なら orElse(Locale.ENGLISH) などで対処してください。
-     */
+    
     private String getPlayerLanguage(Player player) {
-        // Folia のバージョンによっては Optional<Locale> を返す場合があります
-        // 必要に応じて player.locale().orElse(Locale.ENGLISH) などに書き換えてください
+
         Locale locale = player.locale();
 
-        // この行を削除またはコメントアウトすると、コンソール出力されなくなる
-        // plugin.getLogger().info("プレイヤーのロケール: " + locale);
-
-        // "ja", "zh", "en" などを判定
         String language = locale.getLanguage().toLowerCase();
         if (language.startsWith("ja")) return "ja";
         if (language.startsWith("zh")) return "zh";
