@@ -24,13 +24,13 @@ public class ConfigManager {
     }
 
     public void loadConfig() {
-        // 設定フォルダが存在しない場合は作成
+     
         File dataFolder = plugin.getDataFolder();
         if (!dataFolder.exists() && !dataFolder.mkdirs()) {
             logger.warning("プラグインフォルダの作成に失敗しました！");
         }
 
-        // 設定ファイルのロード
+       
         File configFile = new File(dataFolder, "config.yml");
         if (!configFile.exists()) {
             plugin.saveResource("config.yml", false);
@@ -44,7 +44,7 @@ public class ConfigManager {
         }
         messages = YamlConfiguration.loadConfiguration(messagesFile);
 
-        // メッセージの翻訳データをロード
+       
         translations.clear();
 
         if (!messages.contains("messages") || messages.getConfigurationSection("messages") == null) {
